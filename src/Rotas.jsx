@@ -1,11 +1,13 @@
 import React from 'react'
-import { Route, Switch } from 'react-router'
+import { Switch, Route } from 'react-router-dom'
 import HelloWorld from './components/HelloWorld'
-import Arrays from './pages/Arrays'
-import Estados from './pages/Estados'
-import Objetos from './pages/Objetos'
 import Pagina1 from './pages/Pagina1'
 import Pagina2 from './pages/Pagina2'
+import Arrays from './pages/Arrays'
+import Objetos from './pages/Objetos'
+import Estados from './pages/Estados'
+import FilmesPopulares from './pages/filmes/FilmesPopulares'
+import FilmesDetalhes from './pages/filmes/FilmesDetalhes'
 
 const Rotas = () => {
     return (
@@ -17,6 +19,8 @@ const Rotas = () => {
                 <Route exact path="/arrays" component={Arrays} />
                 <Route exact path="/objetos" component={Objetos} />
                 <Route exact path="/estados" component={Estados} />
+                <Route exact path="/filmes/populares" component={FilmesPopulares} />
+                <Route exact path="/filmes/:id" component={FilmesDetalhes} />
             </Switch>
         </div>
     )

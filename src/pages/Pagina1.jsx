@@ -5,14 +5,11 @@ import Cartao from '../components/Cartao'
 const Pagina1 = () => {
     return (
         <div>
-
-            <Cartao
-                titulo="Blá blá blá" variant="success">
+            <Cartao titulo="Blá blá blá" variant="primary">
                 <p>lorem ipsum</p>
             </Cartao>
 
-            <Cartao
-                titulo="Documentos" variant="primary">
+            <Cartao titulo="Documentos">
                 <h3>Lista</h3>
                 <ul>
                     <li>CPF</li>
@@ -21,10 +18,7 @@ const Pagina1 = () => {
                 </ul>
             </Cartao>
 
-            <Cartao
-                titulo="Dados Pessoais"
-                nome="Antônio Augusto Pinto Gama dos Santos"
-                descricao="Uma vez Flamengo, sempre Flamengo! Flamengo sempre eu hei de ser." >
+            <Cartao titulo="Dados Pessoais" nome="Orion Teles">
                 <Table striped bordered hover>
                     <thead>
                         <tr>
@@ -55,7 +49,6 @@ const Pagina1 = () => {
                     </tbody>
                 </Table>
             </Cartao>
-
         </div>
     )
 }

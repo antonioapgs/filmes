@@ -4,9 +4,9 @@ import { Button } from 'react-bootstrap'
 const HelloWorld = () => {
     return (
         <div>
-            <h1>Hello World</h1>
+            <h1>Hello World!</h1>
             <p>Parágrafo</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, veritatis eveniet earum, fugiat porro vel voluptatibus fuga dicta unde quod temporibus rerum non nisi. Harum recusandae sint ipsa maiores nisi.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti amet voluptatibus ducimus blanditiis. Error maxime labore architecto praesentium? Praesentium officiis incidunt quidem enim possimus id laborum a ullam sapiente. Aspernatur.</p>
 
             <Button variant="primary">Salvar</Button>
             <Button variant="danger">Salvar</Button>

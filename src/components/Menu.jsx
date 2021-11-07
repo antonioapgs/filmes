@@ -11,12 +11,13 @@ const Menu = () => {
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="me-auto">
-                            <Link to="/" className="nav-link">Hello World</Link>
-                            <Link to="/pagina1" className="nav-link">Página 1</Link>
-                            <Link to="/pagina2" className="nav-link">Página 2</Link>
-                            <Link to="/arrays" className="nav-link">Arrays</Link>
-                            <Link to="/objetos" className="nav-link">Objetos</Link>
-                            <Link to="/estados" className="nav-link">Estados</Link>
+                            <Link className="nav-link" to="/">Hello World</Link>
+                            <Link className="nav-link" to="/pagina1">Página 1</Link>
+                            <Link className="nav-link" to="/pagina2">Página 2</Link>
+                            <Link className="nav-link" to="/arrays">Arrays</Link>
+                            <Link className="nav-link" to="/objetos">Objetos</Link>
+                            <Link className="nav-link" to="/estados">Estados</Link>
+                            <Link className="nav-link" to="/filmes/populares">Filmes Populares</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
