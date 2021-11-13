@@ -36,8 +36,7 @@ const FilmesDetalhes = (props) => {
                         {filme.budget > 0 && <p>Orçamento: {filme.budget}</p>}
                         <p>Data de Lançamento: {filme.release_date}</p>
                         <p>{filme.overview}</p>
-                        <Link to="/filmes/populares" className="btn btn-danger">Voltar</Link>
-
+                        <Link to={`/filmes/populares`} className="btn btn-danger">Voltar</Link>
                     </Col>
                     <Col md={12}>
                         <h1>Atores</h1>
@@ -47,7 +46,9 @@ const FilmesDetalhes = (props) => {
                                     {ator.profile_path &&
                                         <Col md={1}>
                                             <Card title={ator.name}>
-                                                <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500/' + ator.profile_path} />
+                                                <Link to={`/atores/${ator.id}`}>
+                                                    <Card.Img variant="top" src={'https://image.tmdb.org/t/p/w500/' + ator.profile_path} />
+                                                </Link>
                                             </Card>
                                         </Col>
                                     }

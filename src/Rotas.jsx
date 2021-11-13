@@ -8,6 +8,7 @@ import Objetos from './pages/Objetos'
 import Estados from './pages/Estados'
 import FilmesPopulares from './pages/filmes/FilmesPopulares'
 import FilmesDetalhes from './pages/filmes/FilmesDetalhes'
+import AtoresDetalhes from './pages/atores/AtoresDetalhes'
 
 const Rotas = () => {
     return (
@@ -21,6 +22,7 @@ const Rotas = () => {
                 <Route exact path="/estados" component={Estados} />
                 <Route exact path="/filmes/populares" component={FilmesPopulares} />
                 <Route exact path="/filmes/:id" component={FilmesDetalhes} />
+                <Route exact path="/atores/:id" component={AtoresDetalhes} />
             </Switch>
         </div>
     )
