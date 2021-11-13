@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { Card, Col, Row } from 'react-bootstrap'
+import { Button, Card, Col, Row } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import Carregando from '../../components/Carregando'
 import apiFilmes from '../../services/apiFilmes'
@@ -36,6 +36,7 @@ const AtoresDetalhes = (props) => {
                         <p>Data de Nascimento: {ator.birthday}</p>
                         <p>Nascido(a) em: {ator.place_of_birth}</p>
                         <p>{ator.biography}</p>
+                        <Button variant="danger" onClick={()=>props.history.goBack()}>Voltar</Button>
                     </Col>
                     <Col md={12}>
                         <h1>Filmes</h1>
